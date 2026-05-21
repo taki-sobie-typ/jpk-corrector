@@ -62,7 +62,7 @@ def process_xml(xml_text: str):
             errors.append("Pusta wartosc <tns:NazwaKontrahenta> w wierszu sprzedazy.")
             return block
 
-        replacement = nazwa_value[:25]
+        replacement = nazwa_value[:20]
 
         def replace_nr(nr_m: re.Match):
             nonlocal changes
